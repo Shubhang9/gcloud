@@ -15,8 +15,9 @@ Nacho JSP
 <br/>
 Date is <%=d%>
 <br/>
-Name = ${name}
-<br/>
-Password = ${password}
+<form action="/login.do" method="post">
+Enter name:<input type="text" name="name"/>
+<input type="submit" value="SUBMIT"/>
+</form>
 </body>
 </html>
