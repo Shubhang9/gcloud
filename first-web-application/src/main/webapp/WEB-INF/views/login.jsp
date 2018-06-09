@@ -11,12 +11,14 @@
 Date d=new Date();
 %>
 <body>
-Nacho JSP 
+Nacho JSP
 <br/>
 Date is <%=d%>
-<br/>
 <form action="/login.do" method="post">
-Enter name:<input type="text" name="name"/>
+<p><font color="red" size="100">${errorMessage}</font></p>
+Enter Name:<input type="text" name="name"/>
+<br/>
+Enter Password:<input type="password" name="password"/>
 <input type="submit" value="SUBMIT"/>
 </form>
 </body>
