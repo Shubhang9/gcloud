@@ -16,5 +16,7 @@ Nacho JSP
 Date is <%=d%>
 <br/>
 Name = ${name}
+<br/>
+Password = ${password}
 </body>
 </html>
