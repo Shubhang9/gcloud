@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class LoginController {
 	@RequestMapping(value="/login")
-	@ResponseBody			//tells dispatcher that the response is text and not a URL
 	public String sayHello() {
-		return "Hello World";
+		return "login";
 	}
 }
