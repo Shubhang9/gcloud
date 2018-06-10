@@ -14,7 +14,7 @@ Date d=new Date();
 Nacho JSP
 <br/>
 Date is <%=d%>
-<form action="/login.do" method="post">
+<form action="/spring-mvc/login" method="post">
 <p><font color="red" size="100">${errorMessage}</font></p>
 Enter Name:<input type="text" name="name"/>
 <br/>

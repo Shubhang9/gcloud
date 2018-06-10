@@ -8,5 +8,7 @@
 </head>
 <body>
 Welcome ${param.name}
+<br/>
+Your password is ${password}
 </body>
 </html>
