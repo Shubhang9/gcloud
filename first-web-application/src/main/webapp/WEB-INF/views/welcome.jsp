@@ -9,6 +9,6 @@
 <body>
 Welcome ${param.name}
 <br/>
-Your password is ${password}
+Now, you can <a href="/list-todos">manage your todos.</a>
 </body>
 </html>
