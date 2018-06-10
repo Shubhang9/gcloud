@@ -1,4 +1,4 @@
-package com.in28Minutes.jee;
+package com.in28Minutes.login;
 
 public class UserValidationService {
 	public boolean isUserValid(String user,String password) {
