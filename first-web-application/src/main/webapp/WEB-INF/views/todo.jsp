@@ -7,12 +7,10 @@
 <title>Welcome</title>
 </head>
 <body>
-Hi  ${name}
-<br/>
-Your todos are
-<br/>
-${todo}
-<br/>
-<a class="button" href="/add-todo">Add</a>
+<H1>Add a Todo</H1>
+<form method="post">
+	<input name="desc" type="text"/>
+	<input type="Submit" value="ADD">
+</form>
 </body>
 </html>
