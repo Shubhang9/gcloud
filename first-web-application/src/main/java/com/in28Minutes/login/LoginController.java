@@ -1,5 +1,6 @@
 package com.in28Minutes.login;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +11,9 @@ import com.in28Minutes.login.UserValidationService;
 
 @Controller
 public class LoginController {
-	private UserValidationService service=new UserValidationService();
+	
+	@Autowired
+	private UserValidationService service;
 	@RequestMapping(value="/login",method=RequestMethod.GET)
 	public String showLoginPage() {
 		return "login";
