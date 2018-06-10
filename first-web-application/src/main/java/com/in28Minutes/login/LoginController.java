@@ -14,6 +14,7 @@ public class LoginController {
 	
 	@Autowired
 	private UserValidationService service;
+	
 	@RequestMapping(value="/login",method=RequestMethod.GET)
 	public String showLoginPage() {
 		return "login";
