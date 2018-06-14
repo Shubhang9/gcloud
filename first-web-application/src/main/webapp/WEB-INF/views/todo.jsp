@@ -14,11 +14,12 @@
 <H1>Add a Todo</H1>
 <form:form method="post" commandName="todo">
 	<fieldset  class="form-group">
+	<form:hidden path="id"/>
 	<form:label path="desc">Description</form:label>
 	<form:input path="desc" type="text" class="form-control" required="required"/>
 	<form:errors path="desc" cssClass="text-warning"/>
 	</fieldset>
-	<input class="btn btn-success" type="Submit" value="ADD">
+	<input class="btn btn-success" type="Submit" value="SUBMIT">
 </form:form>
 </div>
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
