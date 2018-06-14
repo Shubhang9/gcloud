@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +26,8 @@ Hi  ${name}
 		<c:forEach items="${todo}" var="todo">
 			<tr>
 				<td>${todo.desc}</td>
-				<td>${todo.date}</td> 
+				<td><fmt:formatDate pattern="dd/MM/yyyy"
+									value="${todo.date}" /></td> 
 				<td>${todo.done}</td>
 				<td>
 				<a href="/update-todo?id=${todo.id}" class="btn btn-danger">Update</a>
