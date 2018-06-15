@@ -10,7 +10,7 @@ public class WelcomeController {
 	
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String showLoginPage(ModelMap model) {
-		model.put("name", "Shubhang");
+		model.put("name", "in28Minutes");
 		return "welcome";
 	}
 }

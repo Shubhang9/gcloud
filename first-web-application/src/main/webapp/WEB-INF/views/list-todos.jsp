@@ -4,7 +4,7 @@
 Hi  ${name}
 <br/>
 <table class="table table-striped">
-	<caption>Your todos are</caption>
+	<caption><spring:message code="todo.caption"/></caption>
 	<thead>
 		<tr>
 			<th>Description</th>
