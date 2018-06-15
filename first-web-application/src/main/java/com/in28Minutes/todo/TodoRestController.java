@@ -3,6 +3,7 @@ package com.in28Minutes.todo;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,4 +19,9 @@ public class TodoRestController {
 	return users;
 	}
 	
+	@RequestMapping(value = "/todos/{id}")
+	public Todo listTodo(@PathVariable int id) {
+	Todo users = service.retrieveTodo(id);
+	return users;
+	}
 }
